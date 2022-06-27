@@ -5,15 +5,15 @@ import pandas
 #     or the number of input ports plus one if "use macros" parameter is set
 # if you want to use macros, use this instead and check "use macros" parameter:
 #def rm_main(data,macros):
-def rm_main(data):
+def rm_main():
     print('Hello, world!')
     # output can be found in Log View
-    print(type(data))
+    # print(type(data))
 
     #your code goes here
 
     #for example:
-    data2 = pandas.DataFrame([3,5,77,8])
+    data2 = pandas.DataFrame([3,5,42,8])
 
     # connect 2 output ports to see the results
-    return data, data2
+    return data2
