@@ -6,5 +6,5 @@ def rm_main(a):
         values = ("A","B","C")
 
     ))
-    # d = DataFrame([str(a.rm_metadata)])
-    return data,a.head()
+    d = DataFrame([str(a.rm_metadata)])
+    return data,d

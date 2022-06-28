@@ -3,11 +3,13 @@ from utils.connection import connector
 
 
 def rm_main():
-    df = connector.read_resource("//Samples/data/Iris")
-    print("The result is a pandas DataFrame:")
-    print(df.head())
-    return df.head()
+    iris, deals, golf = connector.read_resource(["//Samples/data/Iris", "//Samples/data/Deals", "//Samples/data/Golf"])
+    print("The result are pandas DataFrames")
+    print(iris.head(1))
+    print(deals.head(1))
+    print(golf.head(1))
+    return iris.head(1) , deals.head(1), golf.head(1)
 
 
 if __name__ == '__main__':
-	rm_main()
+    rm_main()
