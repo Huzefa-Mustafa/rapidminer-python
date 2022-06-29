@@ -10,7 +10,7 @@ def rm_main():
     iris = pandas.DataFrame(sklearn_iris["data"], columns=sklearn_iris["feature_names"])
     iris["target"] = sklearn_iris["target"]
     # set the parameter to the desired repository location
-    connector.write_resource(iris, "//Local Repository/data/Iris")
+    connector.write_resource(iris, "//Local Repository/RapidMiner_Python/scripts/data/Iris")
     return iris.head(5)
 
 
