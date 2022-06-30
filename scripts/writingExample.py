@@ -10,6 +10,5 @@ def rm_main():
     connector.write_resource(iris, "//Local Repository/RapidMiner_Python/scripts/data/Iris")
     return iris.head(5)
 
-
 if __name__ == '__main__':
     print(rm_main())
