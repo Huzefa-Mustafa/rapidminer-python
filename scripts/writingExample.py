@@ -1,10 +1,7 @@
 import pandas
-import pandas
 from utils.connection import connector
 from sklearn.datasets import load_iris
 
-# rm_main is a mandatory function, 
-# the number of arguments has to be the number of input ports (can be none)
 def rm_main():
     sklearn_iris = load_iris()
     iris = pandas.DataFrame(sklearn_iris["data"], columns=sklearn_iris["feature_names"])
